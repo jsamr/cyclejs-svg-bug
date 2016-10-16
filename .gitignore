@@ -1,0 +1,19 @@
+node_modules
+.DS_Store
+dist
+*.log
+coverage
+
+# User-specific stuff:
+.idea
+
+# Sensitive or high-churn files:
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+
+## File-based project format:
+*.iws

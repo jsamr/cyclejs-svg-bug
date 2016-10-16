@@ -1,0 +1,58 @@
+{
+  "main": "server/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sveinburne/cyclejs-svg-bug"
+  },
+  "author": "Jules RANDOLPH",
+  "license": "MIT",
+  "scripts": {
+    "init": "npm i && npm i estraverse-fb && npm run install-globals",
+    "install-globals": "npm i -g babel-cli@^6.4.0",
+    "test": "npm run eslint",
+    "start": "babel-node server/index.js",
+    "eslint": "node node_modules/eslint/bin/eslint.js .",
+    "jscs": "jscs ."
+  },
+  "dependencies": {
+    "@cycle/dom": "^13.0.0",
+    "@cycle/xstream-run": "^3.1.0",
+    "babel-polyfill": "^6.13.0",
+    "body-parser": "^1.15.2",
+    "express": "^4.13.3",
+    "xstream": "^6.4.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "babel-cli": "^6.4.0",
+    "babel-core": "^6.13.2",
+    "babel-eslint": "^4.1.6",
+    "babel-jscs": "^2.0.5",
+    "babel-loader": "^6.2.3",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-react-hmre": "^1.1.0",
+    "babel-preset-stage-0": "^6.3.13",
+    "cross-env": "^1.0.7",
+    "eslint": "^3.1.0",
+    "eslint-config-standard": "^6.0.0-beta.3",
+    "eslint-plugin-promise": "^2.0.1",
+    "eslint-plugin-react": "^3.4.2",
+    "eslint-plugin-standard": "^2.0.0",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^1.6.1",
+    "jscs": "^2.1.1",
+    "json-loader": "^0.5.3",
+    "mocha": "^2.3.3",
+    "rimraf": "^2.4.3",
+    "stats-webpack-plugin": "^0.2.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-hot-middleware": "^2.2.0"
+  },
+  "engineStrict": {
+    "node": ">=4.2.0",
+    "npm": ">=3.5.2"
+  }
+}
